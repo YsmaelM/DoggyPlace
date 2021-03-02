@@ -292,7 +292,8 @@ div.text > img{
     max-height: 100px;
 }
 div.text >p {
-    font-size: 2rem;
+    font-size: 24px;
+    padding: 0% 5%;
 }
 .content5{
     grid-area: 5 / 1 / 6 / 2 ;
