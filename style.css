@@ -122,6 +122,10 @@ nav.scrolled{
     
 }
 
+.links-list{
+    margin-bottom: 5%;
+}
+
 .link-item{
     margin-left: 5%;
     margin-top:5%;
@@ -252,7 +256,7 @@ div > img{
   align-self: center;
 }
 .content2 > .titles > h1.title{
-    font-size: calc(24px + (36 - 24) * ((100vw - 300px) / (765 - 300)));
+    font-size: calc(50px + (70 - 50) * ((100vw - 300px) / (1600 - 300)));
     color: rgb(0, 109, 119);
     font-family: 'Lobster', cursive;
 }
@@ -312,7 +316,7 @@ div.text >p{
 }
 
 /* media querys */
-@media screen and (min-width: 765px){
+@media only screen and (min-width: 765px){
     .container, .links-list{
         flex-direction: row;
     }
@@ -377,3 +381,21 @@ div.text >p{
         padding: 0% 5%;
     }
 }
+
+@media only screen and (orientation: landscape) {
+    div.text{
+        font-size: calc(22px + (26 - 22) * ((100vw - 400px) / (765 - 400)));
+    }
+    .content2 > .titles > h1.title{
+        font-size: calc(24px + (30 - 24) * ((100vw - 400px) / (765 - 400)));
+    }
+  }
+
+@media (min-width: 765px) and (orientation: landscape) {
+    div.text{
+        font-size: calc(16px + (22 - 16) * ((100vw - 765px) / (1600 - 765)));
+    }
+    .content2 > .titles > h1.title{
+        font-size: calc(24px + (28 - 24) * ((100vw - 765px) / (1600 - 765)));
+    }
+  }
